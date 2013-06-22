@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+    	function sned_message()
+    	{
+    		
+    	}
+    </script>
+  </head>
+  <body>
+  	Event Photo:<img width="100" height="100" src={{e["picture"]}} /><br/>
+    Topic:{{e["name"]}}<br/>
+    Time:{{e["time"]}}<br/>
+    Event Details:{{e["detail"]}}<br/>
+    Loc:{{e["loc"]}}<br/>
+    {% if reg %}
+    Registered
+    {% else %}
+    <form method="post">
+    	<input type="submit" name="register" id="register" value="register" onclick="send_message()" />
+    </form>
+    {% end %}
+  </body>
+</html>

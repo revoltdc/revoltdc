@@ -7,7 +7,7 @@ row1["email"]="bjslxxx@126.com";
 row1["zip"]="22202";
 row1["potential"]="Republican"
 row1["password"]="13811897631"
-row1["phone"] = "7033005458"
+row1["phone"] = "2028129585"
 user.append(row1)
 
 row2={}
@@ -27,11 +27,12 @@ row3["email"]="songyux6@gmail.com";
 row3["zip"]="22202";
 row3["potential"]="Republican"
 row3["password"]="123123"
-row3["phone"] = "7033005458"
+row3["phone"] = "2027469745"
 user.append(row3)
 
 # this is events
 event1={}
+event1["event_id"]="1"
 event1["name"]="Voting the new president"
 event1["time"]="2013-06-21 14:00:00"
 event1["detail"]="Let decide the future of our Country!!!!!"
@@ -40,6 +41,7 @@ event1["picture"]="static/event1.jpg"
 events.append(event1)
 
 event2={}
+event2["event_id"]="2"
 event2["name"]="Play against the incoming war!!!!"
 event2["time"]="2013-06-22 15:00:00"
 event2["detail"]="Let's fight for our country!!"
@@ -48,12 +50,22 @@ event2["picture"]="static/event2.jpg"
 events.append(event2)
 
 event3={}
+event3["event_id"]="3"
 event3["name"]="Don't enhance the Tax!!!"
 event3["time"]="2013-06-23 16:00:00"
 event3["detail"]="Let's get down the increasing tax for our people!"
 event3["loc"]="20001"
 event3["picture"]="static/event3.jpg"
 events.append(event3)
+
+event4={}
+event4["event_id"]="4"
+event4["name"]="Don't enhance the Tax!!!"
+event4["time"]="2013-06-23 16:00:00"
+event4["detail"]="Let's get down the increasing tax for our people!"
+event4["loc"]="20001"
+event4["picture"]="static/event4.jpg"
+events.append(event4)
 
 
 

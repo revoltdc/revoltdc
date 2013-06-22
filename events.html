@@ -7,10 +7,8 @@
       {%for e in all_events%}
           <fieldset>
           	<li>Event Photo:<img width="100" height="100" src={{e["picture"]}} /></li>
-          	<li>Topic:{{ e["name"] }}</li>
+          	<li>Topic:<a href='event_details?event_id={{e["event_id"]}}' >{{ e["name"] }}</a></li>
           	<li>Time:{{e["time"]}}</li>
-          	<li>Event Details:{{e["detail"]}}</li>
-          	<li>Loc:{{e["loc"]}}</li>  	
           </fieldset>
       {%end%}
     </ul>

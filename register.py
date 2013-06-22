@@ -2,6 +2,7 @@ import tornado.ioloop
 import tornado.web
 from mock_data import user
 
+
 class RegisterRequestHandler(tornado.web.RequestHandler):
 	def get(self):
 		self.render("signup.html")
