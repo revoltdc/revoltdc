@@ -8,6 +8,7 @@ row1["zip"]="22202";
 row1["potential"]="Republican"
 row1["password"]="13811897631"
 row1["phone"] = "7033005458"
+user.append(row1)
 
 row2={}
 row2["first"]="Mike";
@@ -52,7 +53,7 @@ event3["time"]="2013-06-23 16:00:00"
 event3["detail"]="Let's get down the increasing tax for our people!"
 event3["loc"]="20001"
 event3["picture"]="user_photos/event3.jpg"
-events.append(event2)
+events.append(event3)
 
 
 
