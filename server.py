@@ -20,7 +20,7 @@ class MainRequestHandler(tornado.web.RequestHandler):
 
 
 
-app = tornado.web.Application([(r"/",MainRequestHandler), (r"/register", RegisterRequestHandler)])
+app = tornado.web.Application([(r"/",MainRequestHandler), (r"/register", RegisterRequestHandler), (r"/events", ListAllEventsHandler)])
 
 if __name__ == "__main__":
 	print mock_data.user

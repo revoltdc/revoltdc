@@ -6,3 +6,4 @@ class ListAllEventsHandler(tornado.web.RequestHandler):
         self.render("events.html")
     def post(self):
         pass
+    
