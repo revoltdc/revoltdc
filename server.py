@@ -1,6 +1,7 @@
 import tornado.ioloop
 import tornado.web
 from register import RegisterRequestHandler
+
 def Get_Location(ipv4):
     apy_key="056a68ee3510ce527fbc9981e6860c0ba7631e8c8f489d8d841be2c196e770f7"
     format="json"
@@ -8,14 +9,18 @@ def Get_Location(ipv4):
     response=urllib.urlopen(request_url)
     return response.read()
 
+import mock_data
+
+
 class MainRequestHandler(tornado.web.RequestHandler):
     def get(self):
-    	self.write("hello")
+    	self.render("index.html")
 
 
 
 app = tornado.web.Application([(r"/",MainRequestHandler), (r"/register", RegisterRequestHandler)])
 
 if __name__ == "__main__":
-    app.listen(80)
-    tornado.ioloop.IOLoop.instance().start()
+	print mock_data.user
+	app.listen(80)
+	tornado.ioloop.IOLoop.instance().start()
