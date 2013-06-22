@@ -36,7 +36,7 @@ event1["name"]="Voting the new president"
 event1["time"]="2013-06-21 14:00:00"
 event1["detail"]="Let decide the future of our Country!!!!!"
 event1["loc"]="20001"
-event1["picture"]="user_photos/event1.jpg"
+event1["picture"]="static/event1.jpg"
 events.append(event1)
 
 event2={}
@@ -44,7 +44,7 @@ event2["name"]="Play against the incoming war!!!!"
 event2["time"]="2013-06-22 15:00:00"
 event2["detail"]="Let's fight for our country!!"
 event2["loc"]="20001"
-event2["picture"]="user_photos/event2.jpg"
+event2["picture"]="static/event2.jpg"
 events.append(event2)
 
 event3={}
@@ -52,7 +52,7 @@ event3["name"]="Don't enhance the Tax!!!"
 event3["time"]="2013-06-23 16:00:00"
 event3["detail"]="Let's get down the increasing tax for our people!"
 event3["loc"]="20001"
-event3["picture"]="user_photos/event3.jpg"
+event3["picture"]="static/event3.jpg"
 events.append(event3)
 
 

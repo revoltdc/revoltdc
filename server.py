@@ -1,6 +1,6 @@
 import tornado.ioloop
 import tornado.web
-
+import os
 from register import RegisterRequestHandler
 from list_all_events import ListAllEventsHandler
 
@@ -18,9 +18,12 @@ class MainRequestHandler(tornado.web.RequestHandler):
     def get(self):
     	self.render("index.html")
 
+settings = {'debug': True, 
+            'static_path': os.path.join(os.getcwd(), 'static')}
+static_path = os.path.join(os.getcwd(), 'static')
 
 
-app = tornado.web.Application([(r"/",MainRequestHandler), (r"/register", RegisterRequestHandler), (r"/events", ListAllEventsHandler)])
+app = tornado.web.Application([(r"/",MainRequestHandler), (r"/register", RegisterRequestHandler), (r"/events", ListAllEventsHandler), (r"/static/(.*)", tornado.web.StaticFileHandler, {"path": static_path})], **settings)
 
 if __name__ == "__main__":
 	print mock_data.user
