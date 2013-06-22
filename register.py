@@ -5,4 +5,4 @@ class RegisterRequestHandler(tornado.web.RequestHandler):
 	def get(self):
 		self.render("signup.html")
 	def post(self):
-		self.write("registered")
+		self.write(self.get_argument("firstname"))
