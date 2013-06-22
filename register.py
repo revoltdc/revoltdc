@@ -3,6 +3,6 @@ import tornado.web
 
 class RegisterRequestHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.write("register page")
+		self.render("signup.html")
 	def post(self):
 		self.write("registered")
